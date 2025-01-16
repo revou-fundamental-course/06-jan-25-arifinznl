@@ -1,6 +1,7 @@
 <!DOCTYPE html>  
 <html lang="en">  
-  
+ <!-- Nama : Zaenal Arifin
+ Revou Mini Course 06 Jan 2025  -->
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
@@ -37,13 +38,11 @@
             </div>  
             <div class="slider-controls">  
                 <!-- Tombol Navigasi Slider -->  
-                <button onclick="changeSlide(-1)">Previous</button>  
-                <button onclick="changeSlide(1)">Next</button>  
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>  
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
             </div>  
         </section>  
-  
-        <hr>  
-  
+   
         <!-- Profile Section -->  
         <section id="profile-section">  
             <header>  
@@ -56,52 +55,50 @@
                 </div>  
             </div>  
         </section>  
-  
-        <hr>  
-  
+   
         <!-- Contact Section -->  
-        <section id="contact-section">  
+        <section id="contact-section" class="contact-section">  
             <header>  
                 <h1>Get In Touch</h1> <!-- Judul Kontak -->  
+                <p>If you have any questions, feel free to reach out to us!</p>  
             </header>  
-        </section>  
-  
-        <section class="contact-form-container">  
-            <div class="contact-form-section">  
-                <!-- Formulir Kontak -->  
-                <form action="" method="post" autocomplete="off">  
-                    <div>  
-                        <label for="inputName">Masukkan nama :</label>  
-                        <input id="inputName" type="text" name="name" autofocus required>  
-                    </div>  
-                    <div>  
-                        <label for="inputBirthdate">Tanggal Lahir :</label>  
-                        <input id="inputBirthdate" type="date" name="birthdate" required>  
-                    </div>  
-                    <div>  
-                        <label for="inputEmail">Masukkan email :</label>  
-                        <input id="inputEmail" type="email" name="email" required>  
-                    </div>  
-                    <div>  
-                        <label for="inputMessage" class="message-label">Pesan :</label>  
-                        <textarea id="inputMessage" name="message" placeholder="Write something.." required minlength="5" maxlength="200"></textarea>  
-                    </div>  
-                    <div>  
-                        <button type="submit">Submit</button> <!-- Tombol Kirim -->  
-                    </div>  
-                </form>  
-            </div>  
-  
-            <section class="output-section">  
-                <div class="output-data">  
-                    <!-- Output Data Pengguna -->  
-                    <p>Current time :</p>  
-                    <p>Name :</p>  
-                    <p>Birthdate :</p>  
-                    <p>Email :</p>  
-                    <p>Message :</p>  
+            <div class="contact-form-container">  
+                <div class="contact-form-section">  
+                    <!-- Formulir Kontak -->  
+                    <form action="" method="post" autocomplete="off">  
+                        <div class="form-group">  
+                            <label for="inputName">Masukkan nama :</label>  
+                            <input id="inputName" type="text" name="name" autofocus required>  
+                        </div>  
+                        <div class="form-group">  
+                            <label for="inputBirthdate">Tanggal Lahir :</label>  
+                            <input id="inputBirthdate" type="date" name="birthdate" required>  
+                        </div>  
+                        <div class="form-group">  
+                            <label for="inputEmail">Masukkan email :</label>  
+                            <input id="inputEmail" type="email" name="email" required>  
+                        </div>  
+                        <div class="form-group">  
+                            <label for="inputMessage" class="message-label">Pesan :</label>  
+                            <textarea id="inputMessage" name="message" placeholder="Write something.." required minlength="5" maxlength="200"></textarea>  
+                        </div>  
+                        <div>  
+                            <button type="submit">Submit</button> <!-- Tombol Kirim -->  
+                        </div>  
+                    </form>  
                 </div>  
-            </section>  
+        
+                <div class="output-section">  
+                    <div class="output-data">  
+                        <!-- Output Data Pengguna -->  
+                        <p>Current time :</p>  
+                        <p>Name :</p>  
+                        <p>Birthdate :</p>  
+                        <p>Email :</p>  
+                        <p>Message :</p>  
+                    </div>  
+                </div>  
+            </div>  
         </section>  
     </main>  
   

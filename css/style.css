@@ -49,19 +49,21 @@ img {
 }  
   
 .navigation > a:hover {  
-    color: #007bff; /* Warna teks saat hover */  
+    color: #a0a13e; /* Warna teks saat hover */  
     transform: scale(1.1); /* Efek zoom saat hover */  
 }  
   
 .navigation > a.active {  
     font-weight: bold; /* Menebalkan teks untuk link aktif */  
-    border-bottom: 2px solid #007bff; /* Garis bawah untuk link aktif */  
+    border-bottom: 2px solid #cab000; /* Garis bawah untuk link aktif */  
 }  
 
   
 /* Home Section */  
 #home-section {  
-    margin: 20px; /* Margin untuk home section */  
+    padding: 10px 20px;
+    background-color: #f9f9f9; /* Warna latar belakang yang lembut */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */  
 }  
   
 .image-slider {  
@@ -97,7 +99,9 @@ button {
   
 /* Profile Section */  
 #profile-section {  
-    margin: 20px; /* Margin untuk profile section */  
+    padding: 10px 20px;
+    background-color: #f9f9f9; /* Warna latar belakang yang lembut */ 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */   
 }  
   
 .profile-container {  
@@ -118,58 +122,77 @@ button {
     justify-content: center; /* Menyelaraskan bio secara horizontal */  
 }  
   
-/* Contact Section */  
-#contact-section {  
-    margin: 20px; /* Margin untuk contact section */  
+/* Contact Section Styles */  
+.contact-section {  
+    padding: 60px 20px; /* Padding untuk bagian atas dan bawah */  
+    background-color: #ffffff; /* Warna latar belakang putih */  
+    text-align: center; /* Menyelaraskan teks di tengah */  
+    border-top: 1px solid #eaeaea; /* Garis pemisah di atas */  
+}  
+  
+.contact-section header h1 {  
+    font-size: 28px; /* Ukuran font untuk judul */  
+    font-weight: 600; /* Ketebalan font untuk judul */  
+    color: #333; /* Warna teks judul */  
+    margin-bottom: 10px; /* Margin bawah untuk judul */  
+}  
+  
+.contact-section header p {  
+    font-size: 16px; /* Ukuran font untuk deskripsi */  
+    color: #555; /* Warna teks deskripsi */  
+    margin-bottom: 30px; /* Margin bawah untuk deskripsi */  
 }  
   
 .contact-form-container {  
-    display: flex; /* Menggunakan flexbox untuk kontainer formulir */  
-    justify-content: space-between; /* Menyebar ruang antara kedua bagian */  
-    margin: 20px; /* Margin untuk kontainer */ 
+    max-width: 600px; /* Lebar maksimum untuk form */  
+    margin: 0 auto; /* Menyelaraskan form di tengah */  
 }  
   
 .contact-form-section {  
-    flex: 1; /* Mengizinkan bagian formulir untuk mengisi ruang */  
-    margin-right: 20px; /* Jarak antara formulir dan output */  
+    margin-bottom: 30px; /* Jarak bawah untuk form */  
 }  
   
-.contact-form-section div {  
-    margin: 10px; /* Margin untuk setiap div dalam formulir */  
+.form-group {  
+    margin-bottom: 20px; /* Jarak antar grup form */  
+    text-align: left; /* Menyelaraskan label dan input ke kiri */  
 }  
   
 label {  
     display: block; /* Menampilkan label sebagai blok */  
+    margin-bottom: 5px; /* Jarak bawah untuk label */  
+    font-weight: 500; /* Ketebalan font untuk label */  
 }  
   
-input, textarea {  
-    flex: 1; /* Memungkinkan input dan textarea untuk mengisi ruang */  
-    padding: 8px; /* Padding untuk input dan textarea */  
-    font-size: 14px; /* Ukuran font untuk input dan textarea */  
-    border: 1px solid #ccc; /* Border untuk input dan textarea */  
-    border-radius: 4px; /* Sudut untuk input dan textarea */  
-    width: 300px; /* Lebar input dan textarea */  
-}  
-  
+input[type="text"],  
+input[type="email"],  
+input[type="date"],  
 textarea {  
-    resize: none; /* Menonaktifkan resize textarea */  
-    height: 80px; /* Tinggi textarea */  
+    width: 100%; /* Lebar penuh untuk input dan textarea */  
+    padding: 10px; /* Padding untuk input dan textarea */  
+    border: 1px solid #ccc; /* Border untuk input dan textarea */  
+    border-radius: 4px; /* Sudut melengkung untuk input dan textarea */  
 }  
   
-/* Output Section */  
+button {  
+    padding: 12px 20px; /* Padding untuk tombol */  
+    font-size: 16px; /* Ukuran font untuk tombol */  
+    color: white; /* Warna teks tombol */  
+    background-color: #cab000; /* Warna latar belakang tombol */  
+    border: none; /* Menghilangkan border default */  
+    border-radius: 4px; /* Sudut melengkung untuk tombol */  
+    cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */  
+    transition: background-color 0.3s; /* Transisi untuk perubahan warna */  
+}  
+  
+button:hover {  
+    background-color: #cab000; /* Warna latar belakang saat hover */  
+}  
+  
 .output-section {  
-    flex: 1; /* Mengizinkan bagian output untuk mengisi ruang */  
-    /* border: 1px solid black; /* Border untuk output data */  
-    padding: 20px; /* Padding untuk output data */ 
-}  
-  
-.output-data {  
-    border: 1px solid black; /* Border untuk output data */  
-    max-width: 100%; /* Lebar maksimum */  
-    width: 500px; /* Lebar output data */  
-    margin-left: 20%; /* Margin kiri */  
-    padding-left: 20px; /* Padding kiri */  
-    flex-direction:row;
+    margin-top: 20px; /* Jarak atas untuk output section */  
+    font-size: 16px; /* Ukuran font untuk output */  
+    color: #333; /* Warna teks output */  
+    text-align: left; /* Menyelaraskan teks output ke kiri */  
 }  
   
 /* Footer Section */  
