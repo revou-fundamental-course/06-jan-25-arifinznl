@@ -1,11 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<!DOCTYPE html>  
+<html lang="en">  
+  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>My Website</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/style.css"> <!-- Link ke file CSS -->  
+</head>  
+  
+<body>  
+    <!-- Header Section -->  
+    <header class="header">  
+        <img class="logo" alt="web-logo" src="assets/favicon.png" /> <!-- Logo Website -->  
+        <nav class="navigation">  
+            <!-- Navigasi Menu -->  
+            <a href="#home-section">Home</a>  
+            <a href="#profile-section">Our Profile</a>  
+            <a href="#contact-section">Message</a>  
+            <a href="#switch-user" id="btnSwitchUser">Switch User</a>  
+        </nav>  
+    </header>  
+  
+    <main>  
+        <!-- Home Section -->  
+        <section id="home-section">  
+            <header>  
+                <h1>Hi, <span id="greetingUser">User</span> Welcome to My Website Portfolio!</h1> <!-- Salam Pengguna -->  
+            </header>  
+            <div class="image-slider">  
+                <!-- Gambar Slider -->  
+                <img src="assets/galaxy.jpg" class="slide" />  
+                <img src="assets/space.jpg" class="slide" />  
+                <img src="assets/skies.jpg" class="slide" />  
+                <img src="assets/black.jpg" class="slide" />  
+            </div>  
+            <div class="slider-controls">  
+                <!-- Tombol Navigasi Slider -->  
+                <button onclick="changeSlide(-1)">Previous</button>  
+                <button onclick="changeSlide(1)">Next</button>  
+            </div>  
+        </section>  
+  
+        <hr>  
+  
+        <!-- Profile Section -->  
+        <section id="profile-section">  
+            <header>  
+                <h1>My Profile</h1> <!-- Judul Profil -->  
+            </header>  
+            <div class="profile-container">  
+                <div class="profile-bio">  
+                    <!-- Deskripsi Profil -->  
+                    <p>Having 2 years of experience in the IT field with expertise in the development, maintenance, and management of user-friendly websites that meet company needs. Skilled in network management, server management, domain management, and web hosting. Possesses strong technical abilities, good communication skills, attention to detail, organization, and excellent interpersonal skills, enabling the enhancement of the company's operational efficiency and effectiveness.</p>  
+                </div>  
+            </div>  
+        </section>  
+  
+        <hr>  
+  
+        <!-- Contact Section -->  
+        <section id="contact-section">  
+            <header>  
+                <h1>Get In Touch</h1> <!-- Judul Kontak -->  
+            </header>  
+        </section>  
+  
+        <section class="contact-form-container">  
+            <div class="contact-form-section">  
+                <!-- Formulir Kontak -->  
+                <form action="" method="post" autocomplete="off">  
+                    <div>  
+                        <label for="inputName">Masukkan nama :</label>  
+                        <input id="inputName" type="text" name="name" autofocus required>  
+                    </div>  
+                    <div>  
+                        <label for="inputBirthdate">Tanggal Lahir :</label>  
+                        <input id="inputBirthdate" type="date" name="birthdate" required>  
+                    </div>  
+                    <div>  
+                        <label for="inputEmail">Masukkan email :</label>  
+                        <input id="inputEmail" type="email" name="email" required>  
+                    </div>  
+                    <div>  
+                        <label for="inputMessage" class="message-label">Pesan :</label>  
+                        <textarea id="inputMessage" name="message" placeholder="Write something.." required minlength="5" maxlength="200"></textarea>  
+                    </div>  
+                    <div>  
+                        <button type="submit">Submit</button> <!-- Tombol Kirim -->  
+                    </div>  
+                </form>  
+            </div>  
+  
+            <section class="output-section">  
+                <div class="output-data">  
+                    <!-- Output Data Pengguna -->  
+                    <p>Current time :</p>  
+                    <p>Name :</p>  
+                    <p>Birthdate :</p>  
+                    <p>Email :</p>  
+                    <p>Message :</p>  
+                </div>  
+            </section>  
+        </section>  
+    </main>  
+  
+    <hr>  
+  
+    <!-- Footer Section -->  
+    <footer>  
+        <p>&copy; 2025 - All rights reserved</p> <!-- Hak Cipta -->  
+    </footer>  
+  
+    <script src="js/script.js"></script> <!-- Link ke file JavaScript -->  
+</body>  
+  
+</html>  

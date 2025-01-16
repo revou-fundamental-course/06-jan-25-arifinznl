@@ -1,0 +1,240 @@
+/* Global Styles */  
+body {  
+    max-width: 100%;  
+    overflow-x: hidden; /* Mencegah scroll horizontal */  
+    font-family: 'Roboto', sans-serif; /* Font untuk seluruh halaman */  
+}  
+  
+img {  
+    max-width: 100%; /* Memastikan gambar responsif */  
+    height: auto; /* Mempertahankan rasio aspek gambar */  
+}  
+  
+/* Header Section */  
+.header {  
+    display: flex; /* Menggunakan flexbox untuk header */  
+    align-items: center; /* Menyelaraskan item di tengah secara vertikal */  
+    justify-content: space-between; /* Menyebar ruang antara logo dan navbar */  
+    padding: 10px 20px; /* Padding untuk header */  
+    background-color: #ffffff; /* Warna latar belakang putih */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */  
+}  
+  
+.logo {  
+    width: 50px; /* Ukuran logo */  
+    height: 50px;  
+    border: 1px solid rgb(222, 210, 210); /* Border logo */  
+    margin-left: 10px; /* Margin kiri */  
+    background-size: cover; /* Ukuran background */  
+    border-radius: 50px; /* Membuat logo bulat */  
+}  
+  
+/* Navigation Styles */  
+.navigation {  
+    display: flex; /* Menggunakan flexbox untuk navbar */  
+    justify-content: center; /* Menyelaraskan link di tengah */  
+    gap: 20px; /* Jarak antar link */  
+    padding: 10px 0; /* Padding atas dan bawah untuk navbar */  
+    
+}  
+  
+.navigation > a {  
+    color: #333; /* Warna teks gelap untuk kontras */  
+    text-decoration: none; /* Menghilangkan garis bawah */  
+    padding: 10px 15px; /* Padding untuk link */  
+    font-size: 16px; /* Ukuran font yang lebih besar */  
+    font-weight: 500; /* Menambahkan ketebalan pada teks */  
+    letter-spacing: 0.5px; /* Jarak antar huruf */  
+    transition: color 0.3s, transform 0.3s; /* Transisi untuk perubahan warna dan transformasi */  
+}  
+  
+.navigation > a:hover {  
+    color: #007bff; /* Warna teks saat hover */  
+    transform: scale(1.1); /* Efek zoom saat hover */  
+}  
+  
+.navigation > a.active {  
+    font-weight: bold; /* Menebalkan teks untuk link aktif */  
+    border-bottom: 2px solid #007bff; /* Garis bawah untuk link aktif */  
+}  
+
+  
+/* Home Section */  
+#home-section {  
+    margin: 20px; /* Margin untuk home section */  
+}  
+  
+.image-slider {  
+    display: flex; /* Menggunakan flexbox untuk slider */  
+    flex-direction: row; /* Mengatur arah slider */  
+    overflow: hidden; /* Menyembunyikan overflow */  
+}  
+  
+.slide {  
+    width: 100%; /* Lebar slider */  
+    height: 400px; /* Tinggi slider */  
+    object-fit: cover; /* Memastikan gambar mengisi area */  
+}  
+  
+.slider-controls {  
+    display: flex; /* Menggunakan flexbox untuk tombol */  
+    gap: 10px; /* Jarak antar tombol */  
+    align-items: center; /* Menyelaraskan tombol secara vertikal */  
+    justify-content: center; /* Menyelaraskan tombol secara horizontal */  
+    margin-top: 10px; /* Margin atas */  
+}  
+  
+button {  
+    width: fit-content; /* Lebar tombol sesuai konten */  
+    height: fit-content; /* Tinggi tombol sesuai konten */  
+    padding: 10px 16px; /* Padding tombol */  
+    font-size: 14px; /* Ukuran font tombol */  
+    border: 1px solid #ccc; /* Border tombol */  
+    border-radius: 4px; /* Sudut tombol */  
+    background-color: #f0f0f0; /* Warna latar belakang tombol */  
+    cursor: pointer; /* Pointer saat hover */  
+}  
+  
+/* Profile Section */  
+#profile-section {  
+    margin: 20px; /* Margin untuk profile section */  
+}  
+  
+.profile-container {  
+    display: flex; /* Menggunakan flexbox untuk profil */  
+    flex-direction: row; /* Mengatur arah profil */  
+    align-items: center; /* Menyelaraskan profil secara vertikal */  
+    justify-content: center; /* Menyelaraskan profil secara horizontal */  
+    height: 330px; /* Tinggi kontainer profil */  
+    margin-bottom: 40px; /* Margin bawah */  
+    flex-wrap: wrap; /* Membungkus elemen jika perlu */  
+    gap: 25px; /* Jarak antar elemen */  
+}  
+  
+.profile-bio {  
+    display: flex; /* Menggunakan flexbox untuk bio */  
+    flex-direction: column; /* Mengatur arah bio */  
+    align-items: center; /* Menyelaraskan bio secara vertikal */  
+    justify-content: center; /* Menyelaraskan bio secara horizontal */  
+}  
+  
+/* Contact Section */  
+#contact-section {  
+    margin: 20px; /* Margin untuk contact section */  
+}  
+  
+.contact-form-container {  
+    display: flex; /* Menggunakan flexbox untuk kontainer formulir */  
+    justify-content: space-between; /* Menyebar ruang antara kedua bagian */  
+    margin: 20px; /* Margin untuk kontainer */ 
+}  
+  
+.contact-form-section {  
+    flex: 1; /* Mengizinkan bagian formulir untuk mengisi ruang */  
+    margin-right: 20px; /* Jarak antara formulir dan output */  
+}  
+  
+.contact-form-section div {  
+    margin: 10px; /* Margin untuk setiap div dalam formulir */  
+}  
+  
+label {  
+    display: block; /* Menampilkan label sebagai blok */  
+}  
+  
+input, textarea {  
+    flex: 1; /* Memungkinkan input dan textarea untuk mengisi ruang */  
+    padding: 8px; /* Padding untuk input dan textarea */  
+    font-size: 14px; /* Ukuran font untuk input dan textarea */  
+    border: 1px solid #ccc; /* Border untuk input dan textarea */  
+    border-radius: 4px; /* Sudut untuk input dan textarea */  
+    width: 300px; /* Lebar input dan textarea */  
+}  
+  
+textarea {  
+    resize: none; /* Menonaktifkan resize textarea */  
+    height: 80px; /* Tinggi textarea */  
+}  
+  
+/* Output Section */  
+.output-section {  
+    flex: 1; /* Mengizinkan bagian output untuk mengisi ruang */  
+    /* border: 1px solid black; /* Border untuk output data */  
+    padding: 20px; /* Padding untuk output data */ 
+}  
+  
+.output-data {  
+    border: 1px solid black; /* Border untuk output data */  
+    max-width: 100%; /* Lebar maksimum */  
+    width: 500px; /* Lebar output data */  
+    margin-left: 20%; /* Margin kiri */  
+    padding-left: 20px; /* Padding kiri */  
+    flex-direction:row;
+}  
+  
+/* Footer Section */  
+footer {  
+    text-align: center; /* Menyelaraskan teks footer ke tengah */  
+}  
+  
+/* Responsive Styles */  
+@media only screen and (max-width: 600px) {  
+    body {  
+        height: 100vh; /* Tinggi body untuk layar kecil */  
+    }  
+  
+    .header {  
+        flex-direction: column; /* Mengatur arah header */  
+    }  
+  
+    .navigation {  
+        flex-direction: column; /* Mengatur arah navbar */  
+        margin-top: 20px; /* Margin atas navbar */  
+        width: 100%; /* Lebar navbar */  
+    }  
+  
+    .profile-container {  
+        height: auto; /* Tinggi otomatis untuk profil */  
+        display: flex; /* Menggunakan flexbox untuk profil */  
+        flex-direction: column; /* Mengatur arah profil */  
+        justify-content: center; /* Menyelaraskan profil secara horizontal */  
+        align-items: center; /* Menyelaraskan profil secara vertikal */  
+    }  
+  
+    #profile-section > h1,  
+    #contact-section > h1 {  
+        margin: auto; /* Margin otomatis untuk judul */  
+    }  
+  
+    .slide {  
+        display: flex; /* Menggunakan flexbox untuk slider */  
+        height: 100vh; /* Tinggi slider untuk layar kecil */  
+        align-items: center; /* Menyelaraskan slider secara vertikal */  
+        justify-content: center; /* Menyelaraskan slider secara horizontal */  
+    }  
+  
+    .contact-form-section {  
+        width: 100%; /* Lebar formulir untuk layar kecil */  
+        margin: 0 auto; /* Margin otomatis */  
+        flex-direction: column; /* Mengatur arah formulir */  
+    }  
+  
+    .contact-form-container {  
+        display: flex; /* Menggunakan flexbox untuk kontainer */  
+        flex-direction: column; /* Mengatur arah kontainer */  
+    }  
+  
+    .output-section {  
+        margin: 45px auto; /* Margin untuk output */  
+        width: 90%; /* Lebar output untuk layar kecil */  
+        flex-direction: column; /* Mengatur arah output */  
+    }  
+  
+    .output-data {  
+        width: auto; /* Lebar otomatis untuk output data */  
+        padding: 10px; /* Padding untuk output data */  
+        margin-left: auto; /* Margin kiri otomatis */  
+        border: 1px solid black; /* Border untuk output data */  
+        flex-direction: column; /* Mengatur arah output data */  
+    }  
+}  
